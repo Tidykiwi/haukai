@@ -6,22 +6,249 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
         <link rel="stylesheet" href="style/styles.css">
+        <script>
+            // Tabbed Menu
+            function openMenu(evt, menuName) {
+              var i, x, tablinks;
+              x = document.getElementsByClassName("menu");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+              }
+              tablinks = document.getElementsByClassName("tablink");
+              for (i = 0; i < x.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+              }
+              document.getElementById(menuName).style.display = "block";
+              evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+            }
+            document.getElementById("myLink").click();
+            </script>
     </head>
     <body>
         <nav class="w3-bar w3-black">
             <a href="index.html" class="w3-bar-item w3-button">Home</a> 
-            <a href="#" class="w3-bar-item w3-button"><strong>Menu</strong></a>
+            <a href="#" class="w3-bar-item w3-button"><b>Menu</b></a>
             <a href="hours.html" class="w3-bar-item w3-button">Hours</a>
             <a href="reservations.html" class="w3-bar-item w3-button">Reservations</a>
             <a href="contact.html" class="w3-bar-item w3-button">Contact</a>
-            <a href="privacy.html" class="w3-bar-item w3-button"><strong>Privacy Statement</strong></a>
+            <a href="privacy.html" class="w3-bar-item w3-button">Privacy Statement</a>
         </nav>
-        <header>
-           <h1>Menu</h1> 
+        <header class="w3-container w3-teal">
+           <h1 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">The Menu</span></h1>
         </header>
-        <main> 
+        <main class="w3-container w3-white"> 
+
+            <!-- Menu Container -->
+            <div class="w3-container" id="menu">
+                <div class="w3-content" style="max-width:50%"><br><br>  
+                    <div class="w3-row w3-center w3-card-2 w3-padding">
+                        <h5 class="w3-center w3-padding-24"><span class="w3-tag w3-wide"><b>Try our kai</b></span></h5>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Appetizers');" id="myLink">
+                        <div class="w3-quarter tablink">Appetizers</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Mains');">
+                        <div class="w3-quarter tablink">Mains</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Desert');">
+                            <div class="w3-quarter tablink">Dessert</div>
+                        </a>
+                        <a href="javascript:void(0)" onclick="openMenu(event, 'Beverages');">
+                            <div class="w3-quarter tablink">Beverages</div>
+                        </a>
+                    </div>
+
+                    <div id="Appetizers" class="w3-container menu w3-padding-48 w3-card-4">
+                        <img src="images/starter.jpg" alt="A delicious looking dish of poached salmon" width="100%">
+                        <h5>REWENA BREAD 10</h5>
+                        <p class="w3-text-grey">Traditional Māori bread.</p><br>
+      
+                        <h5>PAUA FRITTERS 16</h5>
+                        <p class="w3-text-grey">Finely diced pieces of paua, served with a side salad and horopito dressing.</p><br>
+
+                        <h5>RAW FISH 20</h5>
+                        <p class="w3-text-grey">Dried snapper fish marinated in coccnut cream, served with tomatoes and spring onion.</p><br>
+      
+                        <h5>POACHED SALMON 22</h5>
+                        <p class="w3-text-grey">Salmon poached in an orange and pistachio glaze, served with rewena bread.</p><br>
+      
+                        <h5>SEAFODD BASKET 25</h5>
+                        <p class="w3-text-grey">Crumbed musselfs, salt and pepper squid, crumbed hoki bites and garlic prawns.</p>
+                        
+                    </div>
+  
+                    <div id="Mains" class="w3-container menu w3-padding-48 w3-card-4">
+                        <img src="images/mains.jpg" alt="A delicious looking leg or roast lamb" width="100%">
+                        <h5>FISH OF THE DAY 25</h5>
+                        <p class="w3-text-grey">Beer battered fish and kumara fries, served with a side salas and homemade tartare.</p><br>
+      
+                        <h5>MUSSELS AND SCALLOPS 25</h5>
+                        <p class="w3-text-grey">Steamed mussels & scallop mousse, honey and soy broth.</p><br>
+      
+                        <h5>SEAFOOD CHOWDER 30</h5>
+                        <p class="w3-text-grey">Creamy chowder filled with terakihi, prawn, hoki, scallops and mussels, served with flatbread.</p><br>
+      
+                        <h5>PORK BELLY 30</h5>
+                        <p class="w3-text-grey">Slow cooked pork served on a bed of apple slaw with roasted kumara, and crispy noodle.</p><br>
+      
+                        <h5>LAMB STEAK 33</h5>
+                        <p class="w3-text-grey">New Zealand Lamb coated in a kawakawa crumb, served with Dijon mustard glazed carrots, roasted butternut squash and a mushroom jus.</p><br>
+
+                        <h5>VENISON 33</h5>
+                        <p class="w3-text-grey">Vension crusted with horopito, served with glazed plums, cannage salad and red wine jus.</p>
+                    </div>
+
+                    <div id="Desert" class="w3-container menu w3-padding-48 w3-card-4">
+                        <img src="images/dessert.jpg" alt="A delicious looking steamed puddong" width="100%">
+                        <h5>KĀPITI ICE CREAM 10</h5>
+                        <p class="w3-text-grey">Check for daily specials.</p><br>
+      
+                        <h5>STEAM PUDDING 12</h5>
+                        <p class="w3-text-grey">Golden syrup flavoured steam pudding, served with vanilla ice cream.</p><br>
+      
+                        <h5>MINI PAVLOVA 16</h5>
+                        <p class="w3-text-grey">Mini Pavlova served with kawakawa and lemon infused cream and fresh fruit.</p><br>
+      
+                        <h5>BANOFFEE PIE 16</h5>
+                        <p class="w3-text-grey">Toffee,fresh bananas and fesh cream.</p><br>
+                    </div>
+  
+                    <div id="Beverages" class="w3-container menu w3-padding-48 w3-card-4">
+                        <img src="images/wine.jpg" alt="A glass of red wine being pured" width="100%">
+                        <table class="w3-table">
+                            <tr>
+                              <th><h5>RED</h5></th>
+                              <th><h5>B/G</h5></th>
+                            </tr>
+                            <tr>
+                              <td class="w3-text-grey">Terrace Edge Pinot Noir, 2012, Wairarapa</td>
+                              <td class="w3-text-grey">53/13</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Altitude Pinot Noir, 2010, Marlborough</td>
+                                <td class="w3-text-grey">64/15</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Greystone Pinot Noir, 2012, Wairarapa</td>
+                                <td class="w3-text-grey">73/17</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Terrace Edge, Syrah, 2012 Wairarapa</td>
+                                <td class="w3-text-grey">53/13</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Altitude Syrah, 2010 Marlborough </td>
+                                <td class="w3-text-grey">64/15</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Greystone Syrah, 2012, Wairarapa</td>
+                                <td class="w3-text-grey">73/17</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Pegasus Bay Merlot, 2013, Waipara</td>
+                                <td class="w3-text-grey">65/14</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Pegasus Bay Pinot Noir, 2013, Waipara</td>
+                                <td class="w3-text-grey">110</td>
+                            </tr>
+                            <tr>
+                                <th><h5>WHITE</h5></th>
+                                <th><h5></h5></th>
+                              </tr>
+                              <tr>
+                                <td class="w3-text-grey">Spade Oak Pinot Gris, 2011, Gisborne</td>
+                                <td class="w3-text-grey">40/10</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Maude Pinot Gris, 2017, Otago</td>
+                                  <td class="w3-text-grey">49.50/11</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Amisfield, Riesling, 2016, Otago</td>
+                                  <td class="w3-text-grey">53/12</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Lamont Riesling, 2010, Otago</td>
+                                  <td class="w3-text-grey">57/13</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Elephant Hill Viognier, 2013, Hawkes Bay</td>
+                                  <td class="w3-text-grey">55/12</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Greystone Syrah, 2012, Wairarapa</td>
+                                  <td class="w3-text-grey">73/17</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Folium Sauvignon Blanc, 2011, Marlborough</td>
+                                  <td class="w3-text-grey">52/11</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Billecart-Salmon Brut Reserve, France</td>
+                                  <td class="w3-text-grey">120</td>
+                              </tr>
+                              <tr>
+                                <th><h5>BEER AND CIDER</h5></th>
+                                <th><h5></h5></th>
+                              </tr>
+                              <tr>
+                                <td class="w3-text-grey">Garage project range</td>
+                                <td class="w3-text-grey">11</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Tuatara range</td>
+                                  <td class="w3-text-grey">11</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Panhead range</td>
+                                  <td class="w3-text-grey">10</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Coopers Ale</td>
+                                  <td class="w3-text-grey">10</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Heineken</td>
+                                  <td class="w3-text-grey">11</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Moa Cider</td>
+                                  <td class="w3-text-grey">10</td>
+                              </tr>
+                              <tr>
+                                  <td class="w3-text-grey">Crooked Cider</td>
+                                  <td class="w3-text-grey">10</td>
+                              </tr>
+                              <tr>
+                                <th><h5>NON-ALCOHOLIC</h5></th>
+                                <th><h5></h5></th>
+                              </tr>
+                              <tr>
+                                <td class="w3-text-grey">Mineral water</td>
+                                <td class="w3-text-grey">4.00</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Soft drinks</td>
+                                <td class="w3-text-grey">4.00</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Juice</td>
+                                <td class="w3-text-grey">4.00</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Coffee</td>
+                                <td class="w3-text-grey">4.50</td>
+                            </tr>
+                            <tr>
+                                <td class="w3-text-grey">Tea</td>
+                                <td class="w3-text-grey">3.50</td>
+                            </tr>
+                        </table>
+                    </div><br><br>     
+                </div>
+            </div>
         </main>
-        <footer>
+        <footer class="w3-container w3-teal">
             <p><b>©Copyright 2021 by Haukai Restaurant. All rights reversed.</b></p>
           </footer>
     </body>
