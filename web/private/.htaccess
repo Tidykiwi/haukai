@@ -1,5 +1,5 @@
 AuthType Basic
 AuthName "Restricted access"
-AuthUserFile "C:\Users\rossk\.vscode\VSCode Projects\Haukai\haukai\.htpasswd"
+AuthUserFile "/haukai/.htpasswd"
 Require valid-user
 ErrorDocument 401 "Authorisation Required"
