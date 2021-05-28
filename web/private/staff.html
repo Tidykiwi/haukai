@@ -5,7 +5,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-        <link rel="stylesheet" href="style/styles.css">
+        <link rel="stylesheet" href="../style/styles.css">
     </head>
     <body>
         <nav class="w3-bar w3-black" role='navigation' aria-label='Menu'>
@@ -22,85 +22,916 @@
         </header>
         <main class="3w-container" role="main" aria-label="Main content">
 
-        <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-    <h2>Back of house team</h2>
-    <p>Rosters for the next 2 weeks</p>
-    
-    <div class="w3-row"><br>
-    
-    <div class="w3-quarter">
-      <img src="../images/emma.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Alice Brown</h3>
-      <p>Chef</p>
-      <p>021 451 11425</p>
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="../images/ben.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Ben Chapel</h3>
-      <p>Sous Chef</p>
-      <p>027 478 55832</p>
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="../images/gail.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Claire Dunstan</h3>
-      <p>Sous Chef</p>
-      <p>021 369 11478</p>
-    </div>
-    
-    <div class="w3-quarter">
-      <img src="../images/dean.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-      <h3>Dean Edwards</h3>
-      <p>Bar Person</p>
-      <p>021 874 55729</p>
-    </div>
+          <!-- Team Container -->
+          <div class="w3-container w3-padding-64 w3-center" id="team">
+            
+            <h2>Back of house team</h2>
+            <p>Cooking up a storm!</p>
 
-    </div>
-    </div>
-
-            <!-- Team Container -->
-<div class="w3-container w3-padding-64 w3-center" id="team">
-    <h2>Front of house team</h2>
-    <p>Rosters for the next 2 weeks</p>
+            <div class="w3-row w3-center"><br>
     
-    <div class="w3-row"><br>
+              <div class="w3-quarter">
+               <img src="../images/alice.jpg" alt="The head chef" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster" onclick="openStaffRoster('Alice')">
+               <h3>Alice Brown</h3>
+                <p>Head Chef</p>
+                <p>021 451 11425</p>
+              </div>
     
-    <div class="w3-quarter">
-        <img src="../images/alice.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Emma French</h3>
-        <p>Restaurant Manager</p>
-        <p>027 258 96524</p>
-      </div>
+              <div class="w3-quarter">
+                <img src="../images/ben.jpg" alt="A sous chef" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster"  onclick="openStaffRoster('Ben')">
+                <h3>Ben Chapel</h3>
+                <p>Sous Chef</p>
+                <p>027 478 55832</p>
+              </div>
+    
+              <div class="w3-quarter">
+                <img src="../images/claire.jpg" alt="A sous chef" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster"  onclick="openStaffRoster('Claire')">
+                <h3>Claire Dunstan</h3>
+                <p>Sous Chef</p>
+                <p>021 369 11478</p>
+              </div>
+    
+              <div class="w3-quarter">
+                <img src="../images/dean.jpg" alt="A bartender" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster"  onclick="openStaffRoster('Dean')">
+                <h3>Dean Edwards</h3>
+                <p>Bartender</p>
+                <p>021 874 55729</p>
+              </div>
 
-      <div class="w3-quarter">
-        <img src="../images/fred.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Fred Green</h3>
-        <p>Waiter</p>
-        <p>021 753 88427</p>
-      </div>
+            </div>
+          </div>
+          <div>
+            <div id="Alice" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/alice.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Alice</strong><h3>
+                <p>Head Chef</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>   
+    
+            <div id="Ben" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/ben.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Ben</strong><h3>
+                <p>SousChef</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>
 
-      <div class="w3-quarter">
-        <img src="../images/claire.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Gail Hunt</h3>
-        <p>Waiter</p>
-        <p>027 427 34521</p>
-      </div>
+            <div id="Claire" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/claire.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Claire</strong><h3>
+                <p>Sous Chef</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>
+    
+            <div id="Dean" class="w3-container w3-card-4 w3-center 3w-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/dean.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Dean</strong><h3>
+                <p>Bartender</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>
+          </div>
 
-      <div class="w3-quarter">
-        <img src="../images/henry.jpg" alt="Boss" style="width:45%" class="w3-circle w3-hover-opacity">
-        <h3>Henry Innes</h3>
-        <p>Waiter</p>
-        <p>021 456 98798</p>
-      </div>
+          <!-- Team Container -->
+          <div class="w3-container w3-padding-64 w3-center" id="team">
+            
+            <h2>Front of house team</h2>
+            <p>Running it!</p>
 
-    </div>
-    </div>
+            <div class="w3-row w3-center"><br>
+
+              <div class="w3-quarter">
+                <img src="../images/emma.jpg" alt="A restaurant manager" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster" onclick="openStaffRoster('Emma')">
+                <h3>Emma French</h3>
+                <p>Restaurant Manager</p>
+                <p>027 258 96524</p>
+              </div>
+
+              <div class="w3-quarter">
+                <img src="../images/fred.jpg" alt="A young waiter" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster" onclick="openStaffRoster('Fred')">
+                <h3>Fred Green</h3>
+                <p>Waiter</p>
+                <p>021 753 88427</p>
+              </div>
+
+              <div class="w3-quarter">
+                <img src="../images/gail.jpg" alt="A young waitress" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster" onclick="openStaffRoster('Gail')">
+                <h3>Gail Hunt</h3>
+                <p>Waitress</p>
+                <p>027 427 34521</p>
+              </div>
+
+              <div class="w3-quarter">
+                <img src="../images/henry.jpg" alt="A young waiter" style="width:45%" class="w3-circle w3-hover-opacity" title="CLICK for roster" onclick="openStaffRoster('Henry')">
+                <h3>Henry Innes</h3>
+                <p>Waiter</p>
+                <p>021 456 98798</p>
+              </div>
+
+            </div>
+
+          </div>
+          <div>
+
+            <div id="Emma" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/emma.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Emma</strong><h3>
+                <p>Restaurant Manager</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>
+    
+            <div id="Fred" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/fred.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Fred</strong><h3>
+                <p>Waiter</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>
+    
+            <div id="Gail" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/gail.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Gail</strong><h3>
+                <p>Waitress</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table><br>  
+                </div>
+              </div>
+            </div>
+    
+            <div id="Henry" class="w3-container w3-card-4 w3-center w3-margin name" style="display:none"><br>
+                
+              <div> 
+                <img src="../images/henry.jpg" class=" w3-circle w3-hide-small" style="width:85px">
+                <h3><strong>Henry</strong><h3>
+                <p>Waiter</p>
+              </div>
+                
+              <div class="w3-container w3-half">
+                <h2>This Week</h2>
+                <p>Please contact management ASAP if not possible</p>
+                <table class="w3-table w3-striped">
+                  <tr>
+                    <th>Day</th>
+                    <th>Start</th>
+                    <th>Finish</th>
+                  </tr>
+                  <tr>
+                    <td>Monday</td>
+                    <td>TBA</td>
+                   <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Tuesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Wednesday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Thursday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Friday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Saturday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                  <tr>
+                    <td>Sunday</td>
+                    <td>TBA</td>
+                    <td>TBA</td>
+                  </tr>
+                </table><br>
+              </div>
+              <div class="w3-container w3-half">
+                  <h2>Next Week</h2>
+                  <p>Please contact management ASAP if not possible</p>
+                  <table class="w3-table w3-striped">
+                    <tr>
+                      <th>Day</th>
+                      <th>Start</th>
+                      <th>Finish</th>
+                    </tr>
+                    <tr>
+                      <td>Monday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Tuesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Wednesday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <td>Thursday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Friday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                     <tr>
+                      <td>Saturday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                    <tr>
+                      <td>Sunday</td>
+                      <td>TBA</td>
+                      <td>TBA</td>
+                    </tr>
+                  </table>  
+              </div>
+            </div>
+          </div><br>  
         </main>
             
         <footer class="w3-container w3-teal" role="contentinfo" aria-label="Copyright">
             <p class="w3-center w3-padding-24"><span class="w3-tag w3-wide"><strong>©Copyright 2021 by Haukai Restaurant. All rights reserved.</strong></span></p>
+            <script>
+              function openStaffRoster(staffName) {
+                var i;
+                var x = document.getElementsByClassName("name");
+                for (i = 0; i < x.length; i++) {
+                  x[i].style.display = "none";  
+                }
+                document.getElementById(staffName).style.display = "block";  
+              }
+            </script>
         </footer>
     </body>
 </html>
