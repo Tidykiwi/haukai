@@ -4,9 +4,7 @@ Haukai Restaurant Project
 This repository contains the code for a project completed as part of studying 'BIT607 - Web Development' at
 the Open Polytechnic of New Zealand (BIT = Bachelor of Information Technology).
 
-The project involved creating a local web application using information architecture defined in a previous project.
-
-The project required me to have the following pages and content:
+The project required me to have the following pages and content:<br>
   • home (image of restaurant)
   • contact (map)
   • hours (calendar)
